@@ -1,6 +1,6 @@
 # @date/independence-day
 [![Build Status](https://travis-ci.org/elidoran/node-date-independence-day.svg?branch=master)](https://travis-ci.org/elidoran/node-date-independence-day)
-[![npm version](https://badge.fury.io/js/%date%2Findependence-day.svg)](http://badge.fury.io/js/%date%2Findependence-day)
+[![npm version](https://badge.fury.io/js/%40date%2Findependence-day.svg)](http://badge.fury.io/js/%40date%2Findependence-day)
 [![Coverage Status](https://coveralls.io/repos/github/elidoran/node-date-independence-day/badge.svg?branch=master)](https://coveralls.io/github/elidoran/node-date-independence-day?branch=master)
 
 Use with @date/holidays, create Independence Day Date by year, or test if a Date is Independence Day.
