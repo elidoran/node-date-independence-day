@@ -18,22 +18,35 @@ npm install --save @date/independence-day
 ## Usage
 
 ```javascript
-// use package directly
+// 1. use package directly
 const holiday = require('@date/independence-day')
 
 // the `gen` function creates a Date by year.
 const date = holiday.gen(2001)
 
 // the `is` function tests if a Date is the holiday.
-holiday.is(new Date(2001, 2, 3))
+const result = holiday.is(new Date(2001, 2, 3))
+
+if (result) {
+  // truthy value means it is a holiday.
+}
+
+// the actual returned value is a number between 0 and 3.
+// 0 - not a holiday
+// 1 - is a holiday on its main date in a year without an observed date.
+// 2 - is a holiday on an observed date.
+// 3 - is a holiday on its main date in a year with an observed date.
 
 
-// use as a plugin with @date/holidays instance:
+// 2. load into a @date/holidays instance:
 
 // create a Holidays instance:
 const holidays = require('@date/holidays')()
 
 // load holiday into the Holidays instance:
+// 1. without options overrides
+holidays.load('@date/independence-day')
+// 2. with options overrides:
 holidays.load('@date/independence-day', {
   // optional override options here.
 })
