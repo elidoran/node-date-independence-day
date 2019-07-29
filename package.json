@@ -1,6 +1,6 @@
 {
   "name": "@date/independence-day",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create Independence Day Date by year or test if a Date is Independence Day.",
   "main": "index.js",
   "files": [
